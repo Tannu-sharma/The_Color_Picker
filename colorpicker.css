@@ -1,0 +1,75 @@
+body{
+    background: #fff;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("backgroundImage.jfif");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
+
+.boyimage
+{
+    width: 200px;
+    height: 600px;
+    float: left;
+    border-radius:20px 0px 0px 20px; 
+    border:10px solid rgb(109, 153, 224);
+    border-right: none;
+}
+
+.color-picker{
+    position: relative;
+}
+
+.color-indicator{
+    display: inline-block;
+    width: 900px;
+    height: 600px;
+    background-color: #fff;
+    border-radius:0px 20px 20px 0px; 
+    vertical-align:middle;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border:10px solid rgb(109, 153, 224);
+    border-left: none;
+    
+}
+
+p{
+    float:right;
+    align-items: center;
+    padding-left:60px;
+    padding-right:60px;
+    padding-bottom: 60px;
+    text-align: justify;
+    font-size: 20px;
+    color:green;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline;
+}
+h1{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    text-align:center;
+    color:blue;
+    font-weight: bold;
+    font-size: 40px;
+    font-style: normal;
+    font-family: cursive;
+}
+
+#color-picker{
+    display:inline-block;
+    vertical-align: middle;
+    margin-left: 60px;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 40px;
+}

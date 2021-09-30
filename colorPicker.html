@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Color Picker</title>
+    <link rel="stylesheet" href="colorpicker.css" />
+  </head>
+  <body>
+    
+  
+    <div class="color-picker"></div>
+    <img src="boyimage.jpg" class="boyimage">
+    <div id="color-indicator" class="color-indicator">
+        
+        <h1>PROJECT : THE COLOR PICKER</h1><hr color="red" width=810px" height="500px">
+      <p>
+        <span class="tab"></span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quisquam
+        ipsam ex maiores perferendis eum excepturi repellat beatae numquam
+        debitis impedit eveniet voluptatem, et, pariatur consequatur sit libero
+        soluta natus officiis quod? Soluta provident aliquam harum, eaque
+        voluptates aut sint dicta praesentium fugiat quae deserunt libero ipsa,
+        sed recusandae sit quas ab voluptate quasi reiciendis at dolores
+        voluptas! Nam iusto non recusandae, natus vitae perferendis possimus ex
+        ipsa mollitia doloremque dolorum delectus earum tempora nemo inventore,
+        repudiandae fugit consequuntur qui. Nisi esse aliquam commodi provident
+        voluptatum! Quisquam, optio tempore quod quis culpa ipsa modi amet
+        repellat quae ad cupiditate aliquam illo vitae deleniti quos labore
+        itaque. Quam soluta atque facere ut deserunt est illum deleniti laborum
+        sapiente unde beatae vitae ipsum itaque ad officiis earum, corporis ab
+        sit praesentium eum illo? Suscipit facilis esse earum laboriosam dolores
+        asperiores, temporibus atque. Eveniet voluptatem nihil dolor ipsa
+        corporis debitis aut repudiandae, voluptatum iste? Voluptatum dolorem
+        magnam enim fuga. Distinctio corporis autem ex? Delectus nesciunt
+        quisquam cum corrupti rem. Numquam corporis beatae quis necessitatibus
+        deleniti nulla nihil, delectus commodi quisquam? Voluptatem odit ab
+        vitae eveniet illo expedita aut facilis esse earum laboriosam.
+      </p>
+      
+    </div>
+    <div id="color-picker"></div>
+   
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+
+    <script>
+      let colorIndicator = document.getElementById("color-indicator");
+      const colorPicker = new iro.ColorPicker("#color-picker", {
+        width: 180,
+        color: "#fff",
+      });
+      colorPicker.on("color:change", function (color) {
+        colorIndicator.style.backgroundColor = color.hexString;
+      });
+    </script>
+  </body>
+</html>
